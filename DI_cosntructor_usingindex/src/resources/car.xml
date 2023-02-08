@@ -1,0 +1,15 @@
+	<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+    
+    <bean class="beans.Car" id="c">
+    <!-- DI with constructors using types-->
+    
+    	<constructor-arg value="100000" index="1">
+    		</constructor-arg>
+    	<constructor-arg value="tata nano" index="0">
+    	  	</constructor-arg>
+    </bean>
+    
+    
+</beans>
