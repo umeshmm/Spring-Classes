@@ -1,0 +1,30 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+
+<beans>
+	
+	<!-- create car object & injecting engine object  -->
+	<bean class="bean.Car" id="c">
+		<property name="name" value="Tata safari"></property>
+		<property name="e"  >
+				<!-- create engine object -->
+				<bean class="bean.Engine" id="e">
+				<property name="cc" value="2600cc"></property>
+				</bean>
+		</property>
+	</bean>
+
+	
+	
+	<bean class="bean.Car" id="c2">
+		<property name="name" value="Tata nexon"></property>
+		<property name="e" >
+				<bean class="bean.Engine" id="e2">
+				<property name="cc" value="1000cc"></property>
+				</bean>
+		</property>
+	</bean>
+	
+
+</beans>			
