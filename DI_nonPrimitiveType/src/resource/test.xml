@@ -1,0 +1,25 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+
+<beans>
+	<bean class="bean.Engine" id="e">
+		<property name="cc" value="600cc"></property>
+	</bean>
+	
+	<bean class="bean.Car" id="c">
+		<property name="name" value="Tata nano"></property>
+		<property name="e" ref="e"></property>
+	</bean>
+
+	<bean class="bean.Engine" id="e2">
+		<property name="cc" value="1000cc"></property>
+	</bean>
+	
+	<bean class="bean.Car" id="c2">
+		<property name="name" value="Tata nano EV"></property>
+		<property name="e" ref="e2"></property>
+	</bean>
+	
+
+</beans>			
