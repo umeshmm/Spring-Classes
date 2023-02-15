@@ -1,0 +1,14 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+
+	<bean name="/hello.sms" class="com.web.sms.HelloController"></bean>
+	
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix"	value="/WEB-INF/views/"></property>
+		<property name="suffix" value=".jsp"></property>
+	
+	</bean>
+	
+
+</beans>
