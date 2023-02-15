@@ -1,0 +1,11 @@
+1.	create dynamic web project configure tomcat 9 server
+2.	add spring jars to classpath and also to lib folder
+3. configure DispatcherServlet in web.xml as front end controller
+	*.do, *.sms etc
+4. create font end screen on webApp folder index.html
+5.create HelloContorller in com.web.sms
+6. create servlet-xml file WEB_INF with <servlet-name>spring-sms</servlet-name>
+	spring-sms-servlet-xml
+7.create output on which location u want
+	recemonded location is /WEB-INF
+	create sucess.jsp in /WEB-INF/views folder
